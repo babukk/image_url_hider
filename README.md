@@ -1,6 +1,6 @@
 
 UWSGI configuration:
-<pre>
+<code>
 <uwsgi>
     <socket>/tmp/flask.links.shop-the.com.sock</socket>
     <pythonpath>/home/shopper/sites/links.shop-the.com/api/</pythonpath>
@@ -9,7 +9,7 @@ UWSGI configuration:
     <virtualenv>/home/shopper/env/</virtualenv>
     <disable-logging>true</disable-logging>
 </uwsgi>
-</pre>
+</code>
 
 
 Nginx configuration:
