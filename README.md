@@ -1,5 +1,6 @@
 
 UWSGI configuration:
+<pre>
 <code>
 <uwsgi>
     <socket>/tmp/flask.links.shop-the.com.sock</socket>
@@ -10,6 +11,7 @@ UWSGI configuration:
     <disable-logging>true</disable-logging>
 </uwsgi>
 </code>
+</pre>
 
 
 Nginx configuration:
