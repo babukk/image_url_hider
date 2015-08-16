@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 UWSGI configuration:
 
@@ -33,3 +34,6 @@ server {
         root  /home/shopper/sites/links.shop-the.com/static;
     }
 }
+=======
+# image_url_hider
+>>>>>>> 5b8bb21142e337edc472e51819567758dc369715
