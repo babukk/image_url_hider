@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 
 UWSGI configuration:
-
+<pre>
 <uwsgi>
     <socket>/tmp/flask.links.shop-the.com.sock</socket>
     <pythonpath>/home/shopper/sites/links.shop-the.com/api/</pythonpath>
@@ -10,7 +9,7 @@ UWSGI configuration:
     <virtualenv>/home/shopper/env/</virtualenv>
     <disable-logging>true</disable-logging>
 </uwsgi>
-
+</pre>
 
 
 Nginx configuration:
@@ -34,6 +33,3 @@ server {
         root  /home/shopper/sites/links.shop-the.com/static;
     }
 }
-=======
-# image_url_hider
->>>>>>> 5b8bb21142e337edc472e51819567758dc369715
