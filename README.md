@@ -17,12 +17,12 @@ UWSGI configuration:
 Nginx configuration:
 
 upstream flask_serv {
-    server unix:/tmp/flask.links.shop-the.com.sock;
+    server unix:/tmp/flask.links.exampl.com.sock;
 }
 
 server {
     listen 80;
-    server_name  links.shop-the.com;
+    server_name  links.example.com;
 
     location  /  {
         uwsgi_pass  flask_serv;
@@ -32,6 +32,6 @@ server {
     access_log off;
 
     location  /static/ {
-        root  /home/shopper/sites/links.shop-the.com/static;
+        root  /home/shopper/sites/links.exampla.com/static;
     }
 }
