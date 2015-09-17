@@ -33,7 +33,7 @@ def decode(key, enc):
 
 if __name__ == '__main__':
 
-    key = 'Vasya Pupkin and Co.'
+    key = 'top secret'
     # key = ''
     # xxx = 'http://i02.c.aliimg.com/img/ibank/2015/762/803/2116308267_1378471200.jpg'
     # xxx = encode(key, xxx)
