@@ -11,8 +11,8 @@ app = Flask(__name__)
 api = Api(app)
 
 
-KEY = 'Vasya Pupkin and Co.'
-HOST = '92.63.102.86'
+KEY = 'top secret'
+HOST = 'example.com'
 IMG_PATH = '/image/cache/'
 
 
