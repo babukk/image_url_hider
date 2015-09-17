@@ -1,3 +1,4 @@
+Flask application.
 
 UWSGI configuration:
 <pre>
