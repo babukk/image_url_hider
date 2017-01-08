@@ -6,15 +6,12 @@ from BeautifulSoup import BeautifulSoup
 
 import EasyCrypto
 
-
 app = Flask(__name__)
 api = Api(app)
-
 
 KEY = 'top secret'
 HOST = 'example.com'
 IMG_PATH = '/image/cache/'
-
 
 # ----------------------------------------------------------------------------------------------------------------------
 class ReplaceImgSrc(Resource):
@@ -29,7 +26,6 @@ class ReplaceImgSrc(Resource):
 
         return {'html': str(soup)}
 
-
 # ----------------------------------------------------------------------------------------------------------------------
 class EncryptURL(Resource):
 
@@ -38,7 +34,6 @@ class EncryptURL(Resource):
         hash_str = EasyCrypto.encode(KEY, url)
 
         return {'xhash': hash_str}
-
 
 # ----------------------------------------------------------------------------------------------------------------------
 class DecryptURL(Resource):
@@ -49,11 +44,9 @@ class DecryptURL(Resource):
 
         return {'url': url}
 
-
 api.add_resource(EncryptURL, '/encrypt_url')
 api.add_resource(DecryptURL, '/decrypt_url')
 api.add_resource(ReplaceImgSrc, '/replace_img_src')
-
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -86,8 +79,7 @@ def GetImageByHash(xhash):
     except:
         abort(404)
 
-
-# ----------------------------------------------------------------------------------------------------------------------
+        # ----------------------------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
     app.run(debug=True)
 
